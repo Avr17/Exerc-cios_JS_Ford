@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triángulo</title>
+</head>
+<body>
+    <h1>Calculo de Triángulo com JS</h1>
+    <Script>
+        //Programa para identificar o tipo de triángulo 
+
+        // Criamos a função para ler as medidas e determinar o tipo de triángulo 
+
+        function tipoTriangulo (lado1, lado2, lado3){
+            if (lado1 == lado2 && lado2 == lado3) {
+                        return "Equilátero";
+            } else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+                        return "Isósceles";
+            } else {
+                        return "Escaleno";
+    }
+}
+
+        // Entrada de dados
+        const lado1 = parseFloat(prompt("Informe a medida do primeiro lado:"));
+        const lado2 = parseFloat(prompt("Informe a medida do segundo lado:"));
+        const lado3 = parseFloat(prompt("Informe a medida do terceiro lado:"));
+
+        // Saída de dados
+       //const resultado = tipoTriangulo(lado1, lado2, lado3);
+       //console.log(O triângulo é ${resultado}.);
+
+       //Saida de dados usando alert
+       
+        const resultado = tipoTriangulo (lado1, lado2, lado3);
+        alert(`O tringulo é ${resultado}.`);
+        
+    </Script>
+    
+</body>
+</html>
