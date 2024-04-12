@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomsSortidos</title>
+</head>
+<body>
+
+    <script>
+        // vetor para armazenar os nomes
+
+        let nomes = []; 
+
+        // lendo os nomes de 10 pessoas
+
+        for(let i = 0; i < 10; i++) {
+        let nome = prompt("Digite o nome da pessoa " + (i+1));
+        nomes.push(nome);
+}
+
+        // lendo mais 1 nome para efetuar uma busca
+
+        let nomeBusca = prompt("Digite um nome para buscar");
+
+        // verificando se o nome está no vetor
+
+           /* if(nomes.includes(nomeBusca)) {
+                alert("ACHEI");
+            } else {
+                alert("NÃO ACHEI");
+}*/
+
+          if(nomes.includes(nomeBusca)) {
+            console.log("ACHEI");
+            } else {
+             console.log("NÃO ACHEI");
+}
+
+    </script>
+    
+</body>
+</html>

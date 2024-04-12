@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogoFutebal</title>
+</head>
+<body>
+    <script>
+        function resultadoJogo (golsArgentinaTime1, golsBrasilTime2) {
+        if (golsArgentinaTime1 == golsBrasilTime2) {
+            return "O jogo terminou em empate.";
+
+        } else if (golsArgentinaTime1 > golsBrasilTime2) {
+            return "O  time Argentina venceu!";
+
+        }else {
+            return "O time Brasil venceu!";
+        }
+    }
+ 
+    var golsArgentinaTime1 = prompt ("Digite o numero de gols da Argentina: ");
+    var golsBrasilTime2 = prompt ("Digite o numero do Brasil: ");
+
+    alert(resultadoJogo(golsArgentinaTime1, golsBrasilTime2));
+    
+
+    </script>
+    
+</body>
+</html>

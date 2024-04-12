@@ -26,10 +26,9 @@
             return "O time Brasil venceu!";
         }
     }
-
-
-    // Exemplo de uso função 
+ 
     var golsArgentinaTime1 = prompt ("Digite o numero de gols do Brasil: ");
-    var golsBrasilTime2 = prompt ("Digite o numero do Brasil:");
+    var golsBrasilTime2 = prompt ("Digite o numero do Brasil: ");
 
     alert(resultadoJogo(golsArgentinaTime1, golsBrasilTime2));
+    
