@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+</head>
+
+<body>
+    <script>
+
+        //function para calcular desconto 
+        function calcularDesconto (codigo, valorTotal) {
+            var desconto; 
+            switch (codigo){
+                case 1: // Cliente comum
+                    desconto = 0;
+                    break; 
+                case 2: // funcionario
+                    desconto = 0.10; // 10% de desconto
+                    break;
+                case 3: // Vip
+                    desconto = 0.05; // 5% de desconto
+                    break;
+                default:
+                    console.log("Codigo Invalido");
+                    return;
+            }
+            var valorComDesconto = valorTotal - (valorTotal* desconto);
+                    return valorComDesconto;
+        }
+        // Testando a função
+            var codigo = 2; // Supondo que o codigo seja 2 
+            (Funcionario)
+            var valorTotal= 100; // supondo que o valor total da compra seja 100
+            var valorFinal = calcularDesconto(codigo, valorTotal);
+
+            console.log ("O valor final com desconto é: " + valorFinal);
+
+
+
+    </script>    
+</body>
+</html>

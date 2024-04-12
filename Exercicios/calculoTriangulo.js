@@ -16,8 +16,7 @@
 // = informar se o triangulo é equilátero, escaleno ou isócele
 // = motrar a saída do programa na console
 
-<Script>
-//Programa para identificar o tipo de triángulo 
+    //Programa para identificar o tipo de triángulo 
 
 // Criamos a função para ler as medidas e determinar o tipo de triángulo 
 
@@ -41,6 +40,3 @@ const lado3 = parseFloat(prompt("Informe a medida do terceiro lado:"));
  const resultado = tipoTriangulo(lado1, lado2, lado3);
  console.log(O triângulo é ${resultado}.);
 
- 
-
-</Script>
